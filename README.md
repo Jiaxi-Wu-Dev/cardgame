@@ -33,3 +33,6 @@ Timeline
 2 days - working on the javascript
 2 days - working on the html/css
 1 day  - working on the tweeks 
+
+
+![alt text](https://github.com/Jiaxi-Wu-Dev/cardgame/blob/master/assets/wireframe.jpg "Logo Title Text 1")
