@@ -10,6 +10,15 @@
      cursor: pointer;
  }
 
+ .tiles.done {
+     cursor: default;
+ }
+
+ .tiles.done:hover{
+     cursor: default;
+     box-shadow: none;
+ }
+
  .tiles:hover {
      box-shadow: inset 0px 0px 0px 1px black;
      box-sizing: border-box
