@@ -15,34 +15,38 @@
      box-sizing: border-box
  }
 
- .red {
+ .color.red {
      background-color: red;
  }
 
- .orange {
+ .color.orange {
      background-color: orange;
  }
 
- .green {
+ .color.green {
      background-color: green;
  }
 
- .purple {
+ .color.purple {
      background-color: purple;
  }
 
- .skyblue {
+ .color.skyblue {
      background-color: skyblue;
  }
 
- .yellow {
+ .color.yellow {
      background-color: yellow
  }
 
- .navy {
+ .color.navy {
      background-color: navy;
  }
 
- .pink {
+ .color.pink {
      background-color: pink;
+ }
+
+ .hide-color {
+     background-color: none;
  }
