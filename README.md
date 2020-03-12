@@ -55,3 +55,5 @@ fix the css where desired
 
 
 ![alt text](https://github.com/Jiaxi-Wu-Dev/cardgame/blob/master/assets/wireframe.jpg "Logo Title Text 1")
+
+1. https://webdesign.tutsplus.com/tutorials/css-grid-layout-quick-start-guide--cms-27238

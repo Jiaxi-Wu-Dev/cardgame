@@ -1,9 +1,79 @@
 .grid-1 {
     display: grid;
 }
-
+/* 1. used webdesign.com for grid template */
 .grid-1 {
     display:grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+}
+
+.grid-1 div {
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.item-1 {
+    background: #b03532;
+}
+
+.item-2 {
+    background: #33a8a5;
+}
+
+.item-3 {
+    background: #30997a;
+}
+
+.item-4 {
+    background: #6a478f;
+}
+
+.item-5 {
+    background: #da6f2b;
+}
+
+.item-6 {
+    background: #3d8bb1;
+}
+
+.item-7 {
+    background: #e03f3f;
+}
+
+.item-8 {
+    background: #59a627;
+}
+
+.item-9 {
+    background: #4464a1;
+}
+  
+.item-10 {
+    background: red;
+}
+
+.item-11 {
+    background: orange;
+}
+
+.item-12 {
+    background: pink;
+}
+
+.item-13 {
+    background: yellow;
+}
+
+.item-14 {
+    background: green;
+}
+
+.item-15 {
+    background: purple;
+}
+
+.item-16 {
+    background: navy;
 }
