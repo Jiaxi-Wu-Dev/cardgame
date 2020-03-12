@@ -1,19 +1,33 @@
 let clickedTiles = null; 
+let preventClick = false; 
+
 
 function onTilesClicked(e) {
     const target = e.currentTarget
 
-    if(target.className.includes('done')){
+    if(preventClick || target === clickedTiles || target.className.includes('done')){
         return;
     }
 
-    target.className = target.className.replace("color", "color-hidden").trim()
+    target.className = target.className.replace("color", "color-hidden").trim();
+
+    target.className += " done";
     
-    if(!clickedTiles){
-        clickedCard = target; 
+    if (!clickedTiles) {
+        clickedTiles = target; 
     } else if (clickedTiles){
-        if (clickedTiles.getAttribute('data-color') === target.getAttribute('data.color')) {
-            clickedTiles.className += " done"
+        if (clickedTiles.getAttribute('data-color') !== target.getAttribute('data-color')){
+            preventClick = true;
+            setTimeout(()=>{
+                clickedTiles.className = clickedTiles.className.replace('done', '').trim() + " color";
+                target.className = target.className.replace('done', '').trim() + " color";
+                clickedTiles = null;
+                preventClick = false;
+            }, 100)
+        } else {
+            clickedTiles = null;
         }
+        
+        
     }
 }
