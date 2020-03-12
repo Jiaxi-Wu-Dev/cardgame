@@ -6,4 +6,6 @@ class Squares {
     }
 }
 
-
+$( ".grid-1" ).click(function() {
+    alert( "Handler for .click() called." );
+  });
