@@ -1,82 +1,48 @@
-.grid-1 {
-    display: grid;
-    border: 5px solid red;
-    width: 600px;
-    height: 600px;
-}
-/* 1. used webdesign.com for grid template */
-.grid-1 {
-    display:grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px 150px;
-}
+ .row {
+     text-align: center;
+ }
 
-.grid-1 div {
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-}
+ .tiles {
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     background-color: #eee;
+     cursor: pointer;
+ }
 
-.item-1 {
-    background: #b03532;
-}
+ .tiles:hover {
+     box-shadow: inset 0px 0px 0px 1px black;
+     box-sizing: border-box
+ }
 
-.item-2 {
-    background: #33a8a5;
-}
+ .red {
+     background-color: red;
+ }
 
-.item-3 {
-    background: #30997a;
-}
+ .orange {
+     background-color: orange;
+ }
 
-.item-4 {
-    background: #6a478f;
-}
+ .green {
+     background-color: green;
+ }
 
-.item-5 {
-    background: #da6f2b;
-}
+ .purple {
+     background-color: purple;
+ }
 
-.item-6 {
-    background: #3d8bb1;
-}
+ .skyblue {
+     background-color: skyblue;
+ }
 
-.item-7 {
-    background: #e03f3f;
-}
+ .yellow {
+     background-color: yellow
+ }
 
-.item-8 {
-    background: #59a627;
-}
+ .navy {
+     background-color: navy;
+ }
 
-.item-9 {
-    background: #30997a;
-}
-  
-.item-10 {
-    background: #59a627;
-}
-
-.item-11 {
-    background: #da6f2b;
-}
-
-.item-12 {
-    background: #3d8bb1;
-}
-
-.item-13 {
-    background: #b03532;
-}
-
-.item-14 {
-    background: #e03f3f;
-}
-
-.item-15 {
-    background: #6a478f;
-}
-
-.item-16 {
-    background: #33a8a5;
-}
+ .pink {
+     background-color: pink;
+ }

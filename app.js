@@ -7,5 +7,7 @@ class Squares {
 }
 
 $( ".grid-1" ).click(function() {
-    alert( "Handler for .click() called." );
+    // if clicked on color matches another squares clicked on color matches make them dissappear
+    // make a selector function that takes in two arquements
+    document.getElementById()
   });
