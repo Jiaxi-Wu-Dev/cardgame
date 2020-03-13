@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Pixel";
+    src: url("./pixelfont/pixel.TTF");
+}
+
+body{
+    background-image: url(./assets/pokemon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row {
+     text-align: center;
+ }
+
+ .tiles {
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     background-color: #eee;
+     cursor: pointer;
+ }
+
+ .tiles.done {
+     cursor: default;
+ }
+
+ .tiles.done:hover{
+     cursor: default;
+     box-shadow: none;
+ }
+
+ .tiles:hover {
+     box-shadow: inset 0px 0px 0px 1px black;
+     box-sizing: border-box
+ }
+
+ .color.red {
+     background-color: red;
+ }
+
+ .color.orange {
+     background-color: orange;
+ }
+
+ .color.green {
+     background-color: green;
+ }
+
+ .color.purple {
+     background-color: purple;
+ }
+
+ .color.skyblue {
+     background-color: skyblue;
+ }
+
+ .color.yellow {
+     background-color: yellow
+ }
+
+ .color.navy {
+     background-color: navy;
+ }
+
+ .color.pink {
+     background-color: pink;
+ }
+
+ .hide-color {
+     background-color: none;
+ }
+
+ #playerone {
+     border: 1px solid black;
+     text-decoration: none;
+     color: inherit;
+     font-size: 30px;
+     background-color: yellow;
+ }
+
+ #playertwo {
+    border: 1px solid black;
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+    background-color: red;
+}
+
+ #oneplayerh1 {
+     font-size: 50px;
+ }
+
+ #homepage {
+     margin-top: 190px;
+     text-align: center;
+     font-family: "Pixel";
+ }
