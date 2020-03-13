@@ -59,3 +59,21 @@
  .hide-color {
      background-color: none;
  }
+
+ #playerone {
+     border: 1px solid black;
+     text-decoration: none;
+     color: inherit;
+     font-size: 30px;
+ }
+
+ #playertwo {
+    border: 1px solid black;
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+}
+
+ #oneplayerh1 {
+     font-size: 50px;
+ }
