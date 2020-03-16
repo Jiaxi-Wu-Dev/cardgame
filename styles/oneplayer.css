@@ -4,7 +4,7 @@
 }
 
 #box {
-    margin-top: 150px;
+    margin-top: 5px;
 }
 body{
     background-image: url(/assets/city.jpg);
@@ -78,19 +78,25 @@ body{
  .hide-color {
      background-color: none;
  }
+ /* rainbow effects from codepen */
+ .instructions {
+    animation: rainbow 5s infinite; 
+  }
+  
 
- .rainbow.text {
-     background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
-     color: transparent;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     animation-duration: 8s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: rainbow;
- }
+  @-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+  }
+
+
  
