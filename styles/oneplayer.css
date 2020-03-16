@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Pixel";
-    src: url("./pixelfont/pixel.TTF");
+    src: url("/assets/pixelfont/pixel.TTF");
 }
 
 #box {
     margin-top: 150px;
 }
 body{
-    background-image: url(/hw/cardgame/assets/city.jpg);
+    background-image: url(/assets/city.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -16,7 +16,10 @@ body{
  }
 
  .instructions {
-     
+    border: solid red 1px;
+    font-family: "Pixel";
+    src: url("/assets/pixelfont/pixel.TTF");
+    width: 350px;
  }
  .tiles {
      display: inline-block;
