@@ -79,4 +79,18 @@ body{
      background-color: none;
  }
 
+ .rainbow.text {
+     background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+     color: transparent;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: rainbow;
+ }
  
