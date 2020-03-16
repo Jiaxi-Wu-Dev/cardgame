@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Pixel";
+    src: url("/assets/pixelfont/pixel.TTF");
+}
+
+.twogrids {
+    border: solid 1px red;
+    display: flex;
+}
+body{
+    background-image: url(/assets/city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row {
+     text-align: center;
+ }
+
+ .instructions {
+    border: solid red 1px;
+    font-family: "Pixel";
+    src: url("/assets/pixelfont/pixel.TTF");
+    width: 350px;
+ }
+ .tiles {
+     display: inline-block;
+     width: 100px;
+     height: 100px;
+     background-color: #eee;
+     cursor: pointer;
+ }
+
+ .tiles.done {
+     cursor: default;
+ }
+
+ .tiles.done:hover{
+     cursor: default;
+     box-shadow: none;
+ }
+
+ .tiles:hover {
+     box-shadow: inset 0px 0px 0px 1px black;
+     box-sizing: border-box
+ }
+
+ .color.red {
+     background-color: red;
+ }
+
+ .color.orange {
+     background-color: orange;
+ }
+
+ .color.green {
+     background-color: green;
+ }
+
+ .color.purple {
+     background-color: purple;
+ }
+
+ .color.skyblue {
+     background-color: skyblue;
+ }
+
+ .color.yellow {
+     background-color: yellow
+ }
+
+ .color.navy {
+     background-color: navy;
+ }
+
+ .color.pink {
+     background-color: pink;
+ }
+
+ .hide-color {
+     background-color: none;
+ }
+ /* rainbow effects from codepen */
+ .instructions {
+    animation: rainbow 5s infinite; 
+  }
+  
+
+  @-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+  }
+
+
+ 
