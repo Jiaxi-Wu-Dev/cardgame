@@ -15,6 +15,9 @@ body{
      text-align: center;
  }
 
+ .instructions {
+     
+ }
  .tiles {
      display: inline-block;
      width: 100px;
