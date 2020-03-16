@@ -9,32 +9,38 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./styles/oneplayer.css">
     </head>
     <body>
-        <div class="row">
-            <div data-color="pink" class="tiles pink color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="yellow" class="tiles yellow color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="navy" class="tiles navy color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="orange" class="tiles orange color hide-color" onclick="onTilesClicked(event)"></div>
+        <div>
+            <h1 class="instructions"> Instructions </h1>
+            <h2 class="instructions"> Clear the tiles as quickly as possible! </h2>
         </div>
-        <div class="row">
-            <div data-color="skyblue" class="tiles skyblue color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="green" class="tiles green color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="purple" class="tiles purple color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="red" class="tiles red color hide-color" onclick="onTilesClicked(event)"></div>
-        </div>
-        <div class="row">
-            <div data-color="purple" class="tiles purple color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="red" class="tiles red color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="green" class="tiles green color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="yellow" class="tiles yellow color hide-color" onclick="onTilesClicked(event)"></div>
-        </div>
-        <div class="row">
-            <div data-color="pink" class="tiles pink color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="orange" class="tiles orange color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="navy" class="tiles navy color hide-color" onclick="onTilesClicked(event)"></div>
-            <div data-color="skyblue" class="tiles skyblue color hide-color" onclick="onTilesClicked(event)"></div>
+        <div id="box">
+            <div class="row">
+                <div data-color="pink" class="tiles pink color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="yellow" class="tiles yellow color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="navy" class="tiles navy color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="orange" class="tiles orange color hide-color" onclick="onTilesClicked(event)"></div>
+            </div>
+            <div class="row">
+                <div data-color="skyblue" class="tiles skyblue color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="green" class="tiles green color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="purple" class="tiles purple color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="red" class="tiles red color hide-color" onclick="onTilesClicked(event)"></div>
+            </div>
+            <div class="row">
+                <div data-color="purple" class="tiles purple color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="red" class="tiles red color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="green" class="tiles green color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="yellow" class="tiles yellow color hide-color" onclick="onTilesClicked(event)"></div>
+            </div>
+            <div class="row">
+                <div data-color="pink" class="tiles pink color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="orange" class="tiles orange color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="navy" class="tiles navy color hide-color" onclick="onTilesClicked(event)"></div>
+                <div data-color="skyblue" class="tiles skyblue color hide-color" onclick="onTilesClicked(event)"></div>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="app.js" async defer></script>

@@ -19,13 +19,14 @@ function onTilesClicked(e) {
         if (clickedTiles.getAttribute('data-color') !== target.getAttribute('data-color')){
              preventClick = true;
             setTimeout(() => {
-                clickedTiles.className = clickedTiles.className.replace('done', '').trim() + " color";
-                target.className = target.className.replace('done', '').trim() + " color";
+                clickedTiles.className = clickedTiles.className.replace('done', ' ').trim() + " color";
+                target.className = target.className.replace('done', ' ').trim() + " color";
                 clickedTiles = null;
                 preventClick = false;
             }, 100);
         } else {
             clickedTiles = null;
+
         }
     }
 }

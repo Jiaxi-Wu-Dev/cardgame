@@ -3,8 +3,11 @@
     src: url("./pixelfont/pixel.TTF");
 }
 
+#box {
+    margin-top: 150px;
+}
 body{
-    background-image: url(./assets/pokemon.jpg);
+    background-image: url(/hw/cardgame/assets/city.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -70,28 +73,4 @@ body{
      background-color: none;
  }
 
- #playerone {
-     border: 1px solid black;
-     text-decoration: none;
-     color: inherit;
-     font-size: 30px;
-     background-color: yellow;
- }
-
- #playertwo {
-    border: 1px solid black;
-    text-decoration: none;
-    color: inherit;
-    font-size: 30px;
-    background-color: red;
-}
-
- #oneplayerh1 {
-     font-size: 50px;
- }
-
- #homepage {
-     margin-top: 190px;
-     text-align: center;
-     font-family: "Pixel";
- }
+ 

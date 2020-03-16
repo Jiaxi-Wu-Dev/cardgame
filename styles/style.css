@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Pixel";
+    src: url("/hw/cardgame/assets/pixelfont/pixel.TTF");
+}
+
+body{
+    background-image: url(/hw/cardgame/assets/pokemon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ #playerone {
+     border: 1px solid black;
+     text-decoration: none;
+     color: inherit;
+     font-size: 30px;
+     background-color: yellow;
+     border-radius: 5px;
+ }
+
+ #playertwo {
+    border: 1px solid black;
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+ #oneplayerh1 {
+     font-size: 50px;
+ }
+
+ #homepage {
+     margin-top: 190px;
+     text-align: center;
+     font-family: "Pixel";
+ }
