@@ -43,35 +43,35 @@ body{
      box-sizing: border-box
  }
 
- .color.red {
+ .red {
      background-color: red;
  }
 
- .color.orange {
+ .orange {
      background-color: orange;
  }
 
- .color.green {
+ .green {
      background-color: green;
  }
 
- .color.purple {
+ .purple {
      background-color: purple;
  }
 
- .color.skyblue {
+ .skyblue {
      background-color: skyblue;
  }
 
- .color.yellow {
+ .yellow {
      background-color: yellow
  }
 
- .color.navy {
+ .navy {
      background-color: navy;
  }
 
- .color.pink {
+ .pink {
      background-color: pink;
  }
 

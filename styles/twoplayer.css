@@ -6,12 +6,16 @@
 .twogrids {
     border: solid 1px red;
     display: flex;
+    justify-content: space-around;
+    margin-top: 140px;
 }
+
 body{
     background-image: url(/assets/city.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .row {
      text-align: center;
  }
