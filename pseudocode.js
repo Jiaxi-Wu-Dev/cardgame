@@ -29,3 +29,5 @@ In a two player scenario, theres two boards and whoever clears theres the fastes
 https://www.youtube.com/watch?v=bbb9dZotsOc
 https://codepen.io/cb_rn/pen/OVXXmj
 https://codepen.io/matchboxhero/pen/RLebOY?editors=1100
+https://developer.mozilla.org/en-US/docs/Games/Techniques/Control_mechanisms/Desktop_with_mouse_and_keyboard
+https://www.youtube.com/watch?v=VBVOXTgXX2U

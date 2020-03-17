@@ -1,12 +1,12 @@
+//https://www.youtube.com/watch?v=bbb9dZotsOc
+
 let clickedCard = null;
 let preventClick = false;
 
 function onCardClicked(e) {
     const target = e.currentTarget;
 
-    if (preventClick || 
-        target === clickedCard || 
-        target.className.includes('done')
+    if (preventClick || target === clickedCard || target.className.includes('done')
     ) {
         return;
     }  
@@ -19,18 +19,11 @@ function onCardClicked(e) {
     if (!clickedCard) {
         clickedCard = target;
     } else if (clickedCard) {
-        if (
-            clickedCard.getAttribute('data-color') !== 
-            target.getAttribute('data-color')
-            ) {
+        if (clickedCard.getAttribute('data-color') !== target.getAttribute('data-color')) {
             preventClick = true
             setTimeout(() => {
-            clickedCard.className = 
-            clickedCard.className.replace('done', '').trim() + 
-            ' color-hidden';
-            target.className = 
-            target.className.replace('done', '').trim() + 
-            ' color-hidden';
+            clickedCard.className = clickedCard.className.replace('done', '').trim() +  ' color-hidden';
+            target.className = target.className.replace('done', '').trim() + ' color-hidden';
             clickedCard = null;
             preventClick = false;
         }, 100);
@@ -39,3 +32,5 @@ function onCardClicked(e) {
         }
     }
 }
+// https://www.youtube.com/watch?v=VBVOXTgXX2U
+window.addEventListener('keypress', moveBox)
