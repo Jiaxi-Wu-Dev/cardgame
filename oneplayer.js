@@ -1,4 +1,4 @@
-let clickedCard = null;
+let tilesClicked = null;
 let preventClick = false;
 let numberCounter = 0 
 
@@ -6,41 +6,31 @@ let numberCounter = 0
 function onCardClicked(e) {
     const target = e.currentTarget;
 
-    if (preventClick || 
-        target === clickedCard || 
-        target.className.includes('done')
-    ) {
+    if (preventClick || target === tilesClicked || target.className.includes('done')) {
         return;
     }  
 
-    target.className = target.className
-    .replace('color-hidden', '')
-    .trim();
+    target.className = target.className.replace('hide-color', '').trim();
     target.className += ' done';
 
-    if (!clickedCard) {
-        clickedCard = target;
-    } else if (clickedCard) {
+    if (!tilesClicked) {
+        tilesClicked = target;
+    } else if (tilesClicked) {
         if (
-            clickedCard.getAttribute('data-color') !== 
-            target.getAttribute('data-color')
-            ) {
+            tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
             preventClick = true
             setTimeout(() => {
-            clickedCard.className = 
-            clickedCard.className.replace('done', '').trim() + 
-            ' color-hidden';
-            target.className = 
-            target.className.replace('done', '').trim() + 
-            ' color-hidden';
-            clickedCard = null;
+            tilesClicked.className = tilesClicked.className.replace('done', '').trim() + ' hide-color';
+            target.className = target.className.replace('done', '').trim() + ' hide-color';
+            tilesClicked = null;
             preventClick = false;
         }, 100);
-           //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
+           
         } else {
+             // Have a alert when all the squares are done saying "congrats"
             numberCounter += 2;
             console.log(numberCounter)
-            clickedCard = null;
+            tilesClicked = null;
             if (numberCounter >= 16) {
                 setTimeout(() => {
                     alert ("congrats you win!")
@@ -50,7 +40,7 @@ function onCardClicked(e) {
         }
     }
 
-    // Have a alert when all the squares are done saying "congrats"
+   
 
 
 }

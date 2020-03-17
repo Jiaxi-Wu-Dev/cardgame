@@ -16,7 +16,7 @@ body{
 }
 
 
-.card {
+.tiles {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -24,16 +24,16 @@ body{
     cursor: pointer;
 }
 
-.card.done {
+.tiles.done {
     cursor: default;
 }
 
-.card.done {
+.tiles.done {
     cursor: default;
     box-shadow: none;
 }
 
-.card:hover {
+.tiles:hover {
     box-shadow: inset 0px 0px 0px 1px red;
     box-sizing: border-box;
 }
@@ -70,7 +70,7 @@ body{
     background-color: pink;
 }
 
-.color-hidden {
+.hide-color {
     background-color: #eee;
 }
 
