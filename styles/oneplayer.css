@@ -45,12 +45,12 @@ body{
     box-sizing: border-box;
 }
 
-.red {
-    background-color: red;
+.brown {
+    background-color: #826148;
 }
 
-.orange {
-    background-color: orange;
+.redpink {
+    background-color: #DD0054;
 }
 
 .green {

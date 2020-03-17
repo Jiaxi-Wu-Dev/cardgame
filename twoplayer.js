@@ -1,12 +1,12 @@
 let tilesClicked = null;
-let preventClick = false;
+let clickStop = false;
 let numberCounter = 0 
 
 //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
 function onCardClicked(e) {
     const target = e.currentTarget;
 
-    if (preventClick || target === tilesClicked || target.className.includes('done')) {
+    if (clickStop || target === tilesClicked || target.className.includes('done')) {
         return;
     }  
 
@@ -18,12 +18,12 @@ function onCardClicked(e) {
     } else if (tilesClicked) {
         if (
             tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
-            preventClick = true
+            clickStop = true
             setTimeout(() => {
             tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
             target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
-            preventClick = false;
+            clickStop = false;
         }, 100);
            
         } else {
