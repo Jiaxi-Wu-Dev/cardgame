@@ -38,4 +38,8 @@ function onCardClicked(e) {
             clickedCard = null;
         }
     }
+
+ 
+
+
 }
