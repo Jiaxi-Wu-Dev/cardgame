@@ -7,7 +7,7 @@ let numberCounter = 0
 function onCardClicked(e) {
     const target = e.currentTarget;
 
-    if (clickStop || target === tilesClicked || target.className.includes('done')) {
+    if (click || target === tilesClicked || target.className.includes('done')) {
         return;
     }  
 
@@ -19,12 +19,12 @@ function onCardClicked(e) {
     } else if (tilesClicked) {
         if (
             tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
-            clickStop = true
+            click = true
             setTimeout(() => {
             tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
             target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
-            clickStop = false;
+            click = false;
         }, 100);
 
         } else {
@@ -46,17 +46,17 @@ function onCardClicked(e) {
 //https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
 
 function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
+    var countDown = duration, minutes, seconds;
     setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
+        minutes = parseInt(countDown / 60, 10);
+        seconds = parseInt(countDown % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
 
-        if (--timer == 0) {
+        if (--countDown == 0) {
         alert ("You have lost the game, refresh to try again!")
         }
     }, 1000);
