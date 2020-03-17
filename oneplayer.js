@@ -1,6 +1,8 @@
 let clickedCard = null;
 let preventClick = false;
+let numberCounter = 0 
 
+//youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
 function onCardClicked(e) {
     const target = e.currentTarget;
 
@@ -34,10 +36,15 @@ function onCardClicked(e) {
             clickedCard = null;
             preventClick = false;
         }, 100);
+           //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
         } else {
+            numberCounter += 2;
+            console.log(numberCounter)
             clickedCard = null;
         }
     }
+  
+    // Have a alert when all the squares are done saying "congrats"
 
  
 
