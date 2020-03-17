@@ -33,14 +33,9 @@ function onCardClicked(e) {
         }
     }
 
-window.addEventListener("keypress", moveBox, false);
 
-function moveBox(key) {
-    if (key.keycode == "65") {
-        console.log("the a key has been pressed")
-    }
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+  console.log(` ${e.code}`);
 }
-
-
-
-

@@ -1,6 +1,7 @@
 let tilesClicked = null;
 let preventClick = false;
 let numberCounter = 0 
+let lossCounter = 0
 
 //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
 function onCardClicked(e) {
@@ -10,7 +11,7 @@ function onCardClicked(e) {
         return;
     }  
 
-    target.className = target.className.replace('hide-color', '').trim();
+    target.className = target.className.replace('hide-color', '');
     target.className += ' done';
 
     if (!tilesClicked) {
@@ -20,8 +21,11 @@ function onCardClicked(e) {
             tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
             preventClick = true
             setTimeout(() => {
-            tilesClicked.className = tilesClicked.className.replace('done', '').trim() + ' hide-color';
-            target.className = target.className.replace('done', '').trim() + ' hide-color';
+            //loss condition
+            lossCounter +=1
+            console.log(lossCounter)
+            tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
+            target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
             preventClick = false;
         }, 100);
@@ -33,7 +37,7 @@ function onCardClicked(e) {
             tilesClicked = null;
             if (numberCounter >= 16) {
                 setTimeout(() => {
-                    alert ("congrats you win!")
+                    alert ("Congradulations, you win!")
                 }, 500)
                 
             }
