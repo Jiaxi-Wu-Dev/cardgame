@@ -31,3 +31,5 @@ https://codepen.io/cb_rn/pen/OVXXmj
 https://codepen.io/matchboxhero/pen/RLebOY?editors=1100
 https://developer.mozilla.org/en-US/docs/Games/Techniques/Control_mechanisms/Desktop_with_mouse_and_keyboard
 https://www.youtube.com/watch?v=VBVOXTgXX2U
+https://www.w3schools.com/js/js_loop_while.asp
+https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer

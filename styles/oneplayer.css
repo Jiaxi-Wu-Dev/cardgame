@@ -11,6 +11,12 @@ body{
     background-size: cover;
 }
 
+#timer {
+    font-family: "Pixel";
+    src: url("/assets/pixelfont/pixel.TTF");
+    animation: rainbow 5s infinite;
+}
+
 .row {
     text-align: center;
 }

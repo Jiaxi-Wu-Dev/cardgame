@@ -22,14 +22,13 @@ function onCardClicked(e) {
             preventClick = true
             setTimeout(() => {
             //loss condition
-            lossCounter +=1
-            console.log(lossCounter)
             tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
             target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
             preventClick = false;
+            console.log(lossCounter)
         }, 100);
-           
+
         } else {
              // Have a alert when all the squares are done saying "congrats"
             numberCounter += 2;
@@ -44,8 +43,29 @@ function onCardClicked(e) {
         }
     }
 
-   
-
-
 }
 
+//https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer == 0) {
+        alert ("You have lost the game, refresh to try again!")
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 1,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
