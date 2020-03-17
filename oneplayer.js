@@ -42,14 +42,15 @@ function onCardClicked(e) {
             console.log(numberCounter)
             clickedCard = null;
             if (numberCounter >= 16) {
-                console.log("win!")
+                setTimeout(() => {
+                    alert ("congrats you win!")
+                }, 500)
+                
             }
         }
     }
-  
+
     // Have a alert when all the squares are done saying "congrats"
-    
- 
 
 
 }
