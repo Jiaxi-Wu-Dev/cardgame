@@ -25,7 +25,6 @@ function onCardClicked(e) {
             target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
             preventClick = false;
-            console.log(lossCounter)
         }, 100);
 
         } else {
