@@ -10,7 +10,7 @@ function onCardClicked(e) {
         return;
     }  
 
-    target.className = target.className.replace('hide-color', '').trim();
+    target.className = target.className.replace('hide-color', '');
     target.className += ' done';
 
     if (!tilesClicked) {
@@ -20,8 +20,8 @@ function onCardClicked(e) {
             tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
             preventClick = true
             setTimeout(() => {
-            tilesClicked.className = tilesClicked.className.replace('done', '').trim() + ' hide-color';
-            target.className = target.className.replace('done', '').trim() + ' hide-color';
+            tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
+            target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
             preventClick = false;
         }, 100);

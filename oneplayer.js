@@ -1,7 +1,7 @@
 let tilesClicked = null;
 let preventClick = false;
 let numberCounter = 0 
-let lossCounter = 0
+
 
 //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
 function onCardClicked(e) {
@@ -13,7 +13,7 @@ function onCardClicked(e) {
 
     target.className = target.className.replace('hide-color', '');
     target.className += ' done';
-
+    //keep track of the card if its not clicked
     if (!tilesClicked) {
         tilesClicked = target;
     } else if (tilesClicked) {
@@ -21,7 +21,6 @@ function onCardClicked(e) {
             tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
             preventClick = true
             setTimeout(() => {
-            //loss condition
             tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
             target.className = target.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
@@ -30,7 +29,7 @@ function onCardClicked(e) {
         }, 100);
 
         } else {
-             // Have a alert when all the squares are done saying "congrats"
+             // win condition, have a alert when all the squares are done saying "congrats"
             numberCounter += 2;
             console.log(numberCounter)
             tilesClicked = null;
@@ -44,7 +43,7 @@ function onCardClicked(e) {
     }
 
 }
-
+//loss condition
 //https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
 
 function startTimer(duration, display) {

@@ -33,3 +33,6 @@ https://developer.mozilla.org/en-US/docs/Games/Techniques/Control_mechanisms/Des
 https://www.youtube.com/watch?v=VBVOXTgXX2U
 https://www.w3schools.com/js/js_loop_while.asp
 https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
+https://keycode.info/
+https://stackoverflow.com/questions/27099674/simple-keypress-event-not-working-for-textbox
+https://forum.jquery.com/topic/keypress-not-working-on-the-first-key-pressed
