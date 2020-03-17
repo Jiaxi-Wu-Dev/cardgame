@@ -11,7 +11,7 @@ body{
     background-size: cover;
 }
 
-#timer {
+#countdown {
     font-family: "Pixel";
     src: url("/assets/pixelfont/pixel.TTF");
     animation: rainbow 5s infinite;

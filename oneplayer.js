@@ -64,6 +64,6 @@ function startTimer(duration, display) {
 
 window.onload = function () {
     var fiveMinutes = 60 * 1,
-        display = document.querySelector('#time');
+        display = document.querySelector('#countdown');
     startTimer(fiveMinutes, display);
 };
