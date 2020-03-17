@@ -3,6 +3,13 @@
     src: url(/assets/pixelfont/pixel.TTF);
 }
 
+#gametitle {
+    font-family: "Pixel";
+    src: url("/assets/pixelfont/pixel.TTF");
+    animation: rainbow 5s infinite;
+    font-size: 30px;
+    text-align: center;
+}
 
 
 body{
