@@ -4,24 +4,24 @@ let numberCounter = 0
 
 //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
 function onCardClicked(e) {
-    const target = e.currentTarget;
+    const marked = e.currentTarget;
 
-    if (clickStop || target === tilesClicked || target.className.includes('done')) {
+    if (clickStop || marked === tilesClicked || marked.className.includes('done')) {
         return;
     }  
 
-    target.className = target.className.replace('hide-color', '');
-    target.className += ' done';
+    marked.className = marked.className.replace('hide-color', '');
+    marked.className += ' done';
 
     if (!tilesClicked) {
-        tilesClicked = target;
+        tilesClicked = marked;
     } else if (tilesClicked) {
         if (
-            tilesClicked.getAttribute('data-color') !== target.getAttribute('data-color')) {
+            tilesClicked.getAttribute('data-color') !== marked.getAttribute('data-color')) {
             clickStop = true
             setTimeout(() => {
             tilesClicked.className = tilesClicked.className.replace('done', '') + ' hide-color';
-            target.className = target.className.replace('done', '') + ' hide-color';
+            marked.className = marked.className.replace('done', '') + ' hide-color';
             tilesClicked = null;
             clickStop = false;
         }, 100);
