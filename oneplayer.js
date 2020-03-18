@@ -7,7 +7,7 @@ let numberCounter = 0
 function onCardClicked(e) {
     const target = e.currentTarget;
 
-    if (click || target === tilesClicked || target.className.includes('done')) {
+    if (clickStop || target === tilesClicked || target.className.includes('done')) {
         return;
     }  
 

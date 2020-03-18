@@ -1,109 +1,127 @@
 @font-face {
-    font-family: "Pixel";
-    src: url(/assets/pixelfont/pixel.TTF);
+  font-family: "Pixel";
+  src: url(/assets/pixelfont/pixel.TTF);
 }
-
-
 
 .twogrids {
-    border: solid 1px red;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 150px;
+  border: solid 1px red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 150px;
 }
 
-body{
-    background-image: url(/assets/spyvsspy.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background-image: url(/assets/spyvsspy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .row {
-    text-align: center;
+  text-align: center;
 }
 
 /* https://www.youtube.com/watch?v=bbb9dZotsOc */
 
 .tiles {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: #eee;
-    cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  cursor: pointer;
+  border: 2px red solid;
 }
 
 .tiles.done {
-    cursor: default;
+  cursor: default;
 }
 
 .tiles.done {
-    cursor: default;
-    box-shadow: none;
+  cursor: default;
+  box-shadow: none;
 }
 
 .tiles:hover {
-    box-shadow: inset 0px 0px 0px 1px red;
-    box-sizing: border-box;
+  box-shadow: inset 0px 0px 0px 1px red;
+  box-sizing: border-box;
 }
 
 .brown {
-    background-color: #826148;
+  background-color: #826148;
 }
 
 .redpink {
-    background-color: #DD0054;
+  background-color: #dd0054;
 }
 
 .green {
-    background-color: green;
+  background-color: green;
 }
 
 .purple {
-    background-color: purple;
+  background-color: purple;
 }
 
 .skyblue {
-    background-color: skyblue;
+  background-color: skyblue;
 }
 
 .yellow {
-    background-color: yellow
+  background-color: yellow;
 }
 
 .navy {
-    background-color: navy;
+  background-color: navy;
 }
 
 .pink {
-    background-color: pink;
+  background-color: pink;
 }
 
 .hide-color {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 /* rainbow effects from codepen */
 .instructions {
-    animation: rainbow 5s infinite; 
-    font-family: "Pixel";
-    src: url("/assets/pixelfont/pixel.TTF");
-    width: 350px;
+  animation: rainbow 5s infinite;
+  font-family: "Pixel";
+  src: url("/assets/pixelfont/pixel.TTF");
+  width: 350px;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    color: orange;
   }
-  
-
-  @-webkit-keyframes rainbow{
-    0%{color: orange;}	
-    10%{color: purple;}	
-      20%{color: red;}
-    30%{color: CadetBlue;}
-      40%{color: yellow;}
-    50%{color: coral;}
-      60%{color: green;}
-    70%{color: cyan;}
-    80%{color: DeepPink;}
-    90%{color: DodgerBlue;}
-      100%{color: orange;}
+  10% {
+    color: purple;
   }
-
-
+  20% {
+    color: red;
+  }
+  30% {
+    color: CadetBlue;
+  }
+  40% {
+    color: yellow;
+  }
+  50% {
+    color: coral;
+  }
+  60% {
+    color: green;
+  }
+  70% {
+    color: cyan;
+  }
+  80% {
+    color: DeepPink;
+  }
+  90% {
+    color: DodgerBlue;
+  }
+  100% {
+    color: orange;
+  }
+}
