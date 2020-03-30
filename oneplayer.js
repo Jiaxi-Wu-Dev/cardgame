@@ -6,7 +6,7 @@ let numberCounter = 0
 //youtube video https://www.youtube.com/watch?v=bbb9dZotsOc
 function onCardClicked(e) {
     const marked = e.currentTarget;
-
+    // if the tile has been clicked and matched, return, making it unclickable
     if (clickStop || marked === tilesClicked || marked.className.includes('done')) {
         return;
     }
@@ -15,9 +15,11 @@ function onCardClicked(e) {
     marked.className += ' done';
     //keep track of the card if its not clicked
     if (!tilesClicked) {
+        //if the tile is not clicked, toggles the tile to marked
         tilesClicked = marked;
     } else if (tilesClicked) {
         if (
+            // else if the tiles clicked, and the attribute color is not the same change change click to true
             tilesClicked.getAttribute('data-color') !== marked.getAttribute('data-color')) {
             click = true
             setTimeout(() => {
