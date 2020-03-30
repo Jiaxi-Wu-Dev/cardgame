@@ -2,49 +2,54 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/styles/oneplayer.css">
-    </head>
-    <body>
-        <div class="instructions">
-            <h1 class="rainbow-text" > Instructions </h1>
-            <h2> Clear the tiles </h2>
-            <h2>as quickly as possible!</h2>
-        </div>
-        <div id="gametitle"> THE TILES GAME </div>
-        <div id="countdown">Game is Ending In <span id="countdown">01:00</span> minutes!</div>
-       <!--  https://www.youtube.com/watch?v=bbb9dZotsOc -->
-        <div class="row">
-            <div data-color="brown" class="tiles brown hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="redpink" class="tiles redpink hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="green" class="tiles green hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="skyblue" class="tiles skyblue hide-color" onclick="onCardClicked(event)"></div>
-        </div>
-        <div class="row">
-            <div data-color="green" class="tiles green hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="purple" class="tiles purple hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="yellow" class="tiles yellow hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="navy" class="tiles navy hide-color" onclick="onCardClicked(event)"></div>
-        </div>
-        <div class="row">
-            <div data-color="brown" class="tiles brown hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="purple" class="tiles purple hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="skyblue" class="tiles skyblue hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="pink" class="tiles pink hide-color" onclick="onCardClicked(event)"></div>
-        </div>
-        <div class="row">
-            <div data-color="redpink" class="tiles redpink hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="navy" class="tiles navy hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="pink" class="tiles pink hide-color" onclick="onCardClicked(event)"></div>
-            <div data-color="yellow" class="tiles yellow hide-color" onclick="onCardClicked(event)"></div>
-        </div>
-        
-        <script src="./oneplayer.js" async defer></script>
-    </body>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/oneplayer.css">
+</head>
+
+<body>
+    <div class="instructions">
+        <h1 class="rainbow-text"> Instructions </h1>
+        <h2> Clear the tiles </h2>
+        <h2>as quickly as possible!</h2>
+    </div>
+    <div id="gametitle"> THE TILES GAME </div>
+    <div id="countdown">YOU HAVE 60 SECS <span id="countdown">00</span> seconds remaining!</div>
+    <!--  https://www.youtube.com/watch?v=bbb9dZotsOc -->
+    <div class="row">
+        <div data-color="brown" class="tiles brown hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="redpink" class="tiles redpink hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="green" class="tiles green hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="skyblue" class="tiles skyblue hide-color" onclick="onCardClicked(event)"></div>
+    </div>
+    <div class="row">
+        <div data-color="green" class="tiles green hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="purple" class="tiles purple hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="yellow" class="tiles yellow hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="navy" class="tiles navy hide-color" onclick="onCardClicked(event)"></div>
+    </div>
+    <div class="row">
+        <div data-color="brown" class="tiles brown hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="purple" class="tiles purple hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="skyblue" class="tiles skyblue hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="pink" class="tiles pink hide-color" onclick="onCardClicked(event)"></div>
+    </div>
+    <div class="row">
+        <div data-color="redpink" class="tiles redpink hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="navy" class="tiles navy hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="pink" class="tiles pink hide-color" onclick="onCardClicked(event)"></div>
+        <div data-color="yellow" class="tiles yellow hide-color" onclick="onCardClicked(event)"></div>
+    </div>
+
+    <script src="./oneplayer.js" async defer></script>
+</body>
+
 </html>
