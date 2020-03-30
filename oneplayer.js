@@ -44,30 +44,6 @@ function onCardClicked(e) {
 }
 //loss condition
 //https://stackoverflow.com/questions/20618355/the-simplest-possible-javascript-countdown-timer
-/* 
-function startTimer(duration, display) {
-    var countDown = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(countDown / 60, 10);
-        seconds = parseInt(countDown % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds;
-
-        if (--countDown == 0) {
-            alert("You have lost the game, refresh to try again!")
-        }
-    }, 1000);
-}
-
-window.onload = function () {
-    var fiveMinutes = 60 * 1,
-        display = document.querySelector('#countdown');
-    startTimer(fiveMinutes, display);
-}; */
-
 
 let initialNumber = 0;
 
@@ -77,12 +53,13 @@ window.onload = function () {
         let secondsPlus = initialNumber++;
         console.log(secondsPlus);
         document.getElementById("countdown").innerHTML = "YOU HAVE 60 SECS" + " " + secondsPlus;
-        
+
         if (secondsPlus == 60) {
             alert("You have lost the game, refresh to try again!")
+            secondsPlus.clear()
         }
     }
-    
+
     function startTimer() {
         keepTime = setInterval(incrementTimer, 1000);
     }
