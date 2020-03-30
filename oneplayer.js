@@ -78,6 +78,9 @@ window.onload = function () {
         console.log(secondsPlus);
         document.getElementById("countdown").innerHTML = "YOU HAVE 60 SECS" + " " + secondsPlus;
         
+        if (secondsPlus == 60) {
+            alert("You have lost the game, refresh to try again!")
+        }
     }
     
     function startTimer() {
