@@ -1,5 +1,8 @@
+// setting up variables to keep track of the tiles state
 let tilesClicked = null;
 let clickStop = false;
+
+// variable to keep track of how many cards are matched
 let numberCounter = 0
 
 
@@ -57,23 +60,30 @@ function onCardClicked(e) {
 
 let initialNumber = 0;
 
-
+// Create a onload method that increments a counter to 60 and then prompt a alert message
 window.onload = function () {
+    //function incrementTimer increases the count every second
     function incrementTimer() {
         let secondsPlus = initialNumber++;
         console.log(secondsPlus);
+        // use .innerHTML to make the DOM equal to secondsPlus 
         document.getElementById("countdown").innerHTML = "YOU HAVE 60 SECS" + " " + secondsPlus;
 
+        // check every second to see if the time has reached 60 yet 
+        // when secondsPlus reaches 60, alert you have lost the game
         if (secondsPlus == 60) {
             alert("You have lost the game, refresh to try again!")
-            secondsPlus.clear()
+            // clear the counter
+            secondsPlus == " "
         }
     }
 
+    // startTimer() after loading, runs the incrementTimer function every second
     function startTimer() {
         keepTime = setInterval(incrementTimer, 1000);
     }
-
+    //use querySelector to return countdown
     display = document.querySelector("countdown");
+    // pass the display variable to startTimer()
     startTimer(display);
 };
