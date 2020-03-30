@@ -71,16 +71,19 @@ window.onload = function () {
 
 let initialNumber = 0;
 
-function incrementTimer() {
-    let secondsPlus = initialNumber++;
-    console.log(secondsPlus);
-}
-
-function startTimer() {
-    keepTime = setInterval(incrementTimer, 1000);
-}
 
 window.onload = function () {
-    display = document.querySelector("#countdown");
+    function incrementTimer() {
+        let secondsPlus = initialNumber++;
+        console.log(secondsPlus);
+        document.getElementById("countdown").innerHTML = "YOU HAVE 60 SECS" + " " + secondsPlus;
+        
+    }
+    
+    function startTimer() {
+        keepTime = setInterval(incrementTimer, 1000);
+    }
+
+    display = document.querySelector("countdown");
     startTimer(display);
 };
