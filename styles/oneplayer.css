@@ -35,7 +35,6 @@ body {
   height: 100px;
   background-color: #eee;
   cursor: pointer;
-  border: 2px solid red;
 }
 
 .tiles.done {
